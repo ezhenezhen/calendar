@@ -3,9 +3,8 @@ class EventsController < ApplicationController
   # GET /events
   # GET /events.json
   def index
-    @events = Event.all
-
-    @date = params[:month] ? Date.parse(params[:month]) : Date.today
+    @date = define_date
+    @events = Event.where(:date => @date.beginning_of_month - 6.days..@date.end_of_month + 6.days)
 
     respond_to do |format|
       format.html # index.html.erb
@@ -14,9 +13,9 @@ class EventsController < ApplicationController
   end
 
   def show_my_events
+    @date = define_date
     @events = Event.find_all_by_user_id(current_user.id)
 
-    @date = params[:month] ? Date.parse(params[:month]) : Date.today
     render :index
   end
 
@@ -91,4 +90,10 @@ class EventsController < ApplicationController
       format.json { head :no_content }
     end
   end
+end
+
+private
+
+def define_date
+  params[:month] ? Date.parse(params[:month]) : Date.today
 end

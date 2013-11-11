@@ -15,10 +15,22 @@
     <%= f.label :name %><br />
     <%= f.text_field :name %>
   </div>
+
   <div class="field">
     <%= f.label :date %><br />
     <%= f.text_field :date %>
   </div>
+
+  Repeat:
+  <%= radio_button_tag :status, 'daily' %>
+  <%= label_tag :status_late, 'Daily' %>
+  <%= radio_button_tag :status, 'weekly' %>
+  <%= label_tag :status_late, 'Weekly' %>
+  <%= radio_button_tag :status, 'monthly' %>
+  <%= label_tag :status_late, 'Monthly' %>
+  <%= radio_button_tag :status, 'yearly' %>
+  <%= label_tag :status_absent, 'Yearly' %>
+
   <div class="actions">
     <%= f.submit %>
   </div>
