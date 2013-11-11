@@ -13,6 +13,13 @@ class EventsController < ApplicationController
     end
   end
 
+  def show_my_events
+    @events = Event.find_all_by_user_id(current_user.id)
+
+    @date = params[:month] ? Date.parse(params[:month]) : Date.today
+    render :index
+  end
+
   # GET /events/1
   # GET /events/1.json
   def show
@@ -44,13 +51,14 @@ class EventsController < ApplicationController
   # POST /events.json
   def create
     @event = Event.new(params[:event])
+    @event.user_id = current_user.id
 
     respond_to do |format|
       if @event.save
-        format.html { redirect_to @event, notice: 'Event was successfully created.' }
+        format.html { redirect_to events_path, notice: 'Event was successfully created.' }
         format.json { render json: @event, status: :created, location: @event }
       else
-        format.html { render action: "new" }
+        format.html { render action: 'new' }
         format.json { render json: @event.errors, status: :unprocessable_entity }
       end
     end
@@ -66,7 +74,7 @@ class EventsController < ApplicationController
         format.html { redirect_to @event, notice: 'Event was successfully updated.' }
         format.json { head :no_content }
       else
-        format.html { render action: "edit" }
+        format.html { render action: 'edit' }
         format.json { render json: @event.errors, status: :unprocessable_entity }
       end
     end

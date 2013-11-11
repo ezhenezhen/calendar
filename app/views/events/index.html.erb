@@ -1,4 +1,7 @@
-<h3><%= link_to 'New Event', new_event_path %></h3>
+<br />
+<%= link_to 'Show all events', events_path %>
+|
+<%= link_to 'Show my events', my_events_path %>
 
 <div id="calendar">
   <h2 id="month">
@@ -21,3 +24,5 @@
     <% end %>
 <% end %>
 </div>
+
+<h3><%= link_to 'New Event', new_event_path %></h3>
