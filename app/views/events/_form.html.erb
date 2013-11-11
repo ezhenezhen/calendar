@@ -22,14 +22,10 @@
   </div>
 
   Repeat:
-  <%= radio_button_tag :status, 'daily' %>
-  <%= label_tag :status_late, 'Daily' %>
-  <%= radio_button_tag :status, 'weekly' %>
-  <%= label_tag :status_late, 'Weekly' %>
-  <%= radio_button_tag :status, 'monthly' %>
-  <%= label_tag :status_late, 'Monthly' %>
-  <%= radio_button_tag :status, 'yearly' %>
-  <%= label_tag :status_absent, 'Yearly' %>
+  <% %w(daily weekly monthly yearly).each do |value| %>
+    <%= f.check_box value.to_sym %>
+    <%= f.label value.to_sym, value.capitalize %>
+  <%end %>
 
   <div class="actions">
     <%= f.submit %>

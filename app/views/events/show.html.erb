@@ -10,6 +10,13 @@
   <%= @event.date %>
 </p>
 
+<p>
+  <b>Repeat:</b>
+  <% %w(daily weekly monthly yearly).each do |value| %>
+      <%= value if @event.send(value.to_sym) %>
+  <% end %>
+</p>
+
 
 <%= link_to 'Edit', edit_event_path(@event) %> |
 <%= link_to 'Back', events_path %>
