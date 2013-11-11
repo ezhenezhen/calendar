@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="86d44b2c-6531-42bd-98e6-cc6ed5798dd2" name="Default" comment="working on calendar">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/.generators" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/.rakeTasks" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/calendar.iml" afterPath="" />
+    <list default="true" id="86d44b2c-6531-42bd-98e6-cc6ed5798dd2" name="Default" comment="">
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
     </list>
     <ignored path="calendar.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="86d44b2c-6531-42bd-98e6-cc6ed5798dd2" time="1384188058848" ignored="false" />
+    <file path="/Dummy.txt" changelist="86d44b2c-6531-42bd-98e6-cc6ed5798dd2" time="1384188078970" ignored="false" />
     <file path="/routes.rb" changelist="86d44b2c-6531-42bd-98e6-cc6ed5798dd2" time="1384182375321" ignored="false" />
     <file path="/_form.html.erb" changelist="86d44b2c-6531-42bd-98e6-cc6ed5798dd2" time="1384187913445" ignored="false" />
     <file path="/application.js" changelist="86d44b2c-6531-42bd-98e6-cc6ed5798dd2" time="1384170167789" ignored="false" />
@@ -19,7 +16,7 @@
     <file path="/index.html.erb" changelist="86d44b2c-6531-42bd-98e6-cc6ed5798dd2" time="1384182394819" ignored="false" />
     <file path="/events_controller.rb" changelist="86d44b2c-6531-42bd-98e6-cc6ed5798dd2" time="1384187816557" ignored="false" />
     <file path="/20131111140704_change_datetime_format_in_events.rb" changelist="86d44b2c-6531-42bd-98e6-cc6ed5798dd2" time="1384178859714" ignored="false" />
-    <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="86d44b2c-6531-42bd-98e6-cc6ed5798dd2" time="1384188065385" ignored="false" />
+    <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="86d44b2c-6531-42bd-98e6-cc6ed5798dd2" time="1384188088266" ignored="false" />
     <file path="/20131111160900_add_repeating_to_events.rb" changelist="86d44b2c-6531-42bd-98e6-cc6ed5798dd2" time="1384186180658" ignored="false" />
     <file path="/show.html.erb" changelist="86d44b2c-6531-42bd-98e6-cc6ed5798dd2" time="1384187366481" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -560,7 +557,11 @@
       <created>1384188059564</created>
       <updated>1384188059564</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="deleting files">
+      <created>1384188082187</created>
+      <updated>1384188082187</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -649,7 +650,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding repeating fields to db" />
+    <option name="LAST_COMMIT_MESSAGE" value="deleting files" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -668,6 +669,7 @@
     <MESSAGE value="adding show my events filter" />
     <MESSAGE value="working on repeating events" />
     <MESSAGE value="adding repeating fields to db" />
+    <MESSAGE value="deleting files" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
