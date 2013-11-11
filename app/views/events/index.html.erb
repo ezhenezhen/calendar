@@ -1,0 +1,23 @@
+<h3><%= link_to 'New Event', new_event_path %></h3>
+
+<div id="calendar">
+  <h2 id="month">
+    <%= link_to "<", :month => (@date.beginning_of_month-1).strftime('%Y-%m-%d') %>
+    <%=h @date.strftime("%B %Y") %>
+    <%= link_to ">", :month => (@date.end_of_month+1).strftime('%Y-%m-%d') %>
+  </h2>
+
+<%= calendar_for(@events, year: @date.year, month: @date.month) do |t| %>
+      <%= t.head('Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday') %>
+    <%= t.day do |day, events| %>
+        <% if events.nil? %>
+            <%= day.cweek %>
+        <% else %>
+            <%= day.day %>
+            <% events.each do |event| %>
+                  <ul><%= link_to h(event.name), event %></ul>
+            <% end %>
+        <% end %>
+    <% end %>
+<% end %>
+</div>
