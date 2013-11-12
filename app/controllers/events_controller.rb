@@ -4,7 +4,7 @@ class EventsController < ApplicationController
   # GET /events.json
   def index
     @date = define_date
-    @events = Event.where(:date => @date.beginning_of_month - 6.days..@date.end_of_month + 6.days)
+    @events = Event.all
 
     respond_to do |format|
       format.html # index.html.erb

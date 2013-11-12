@@ -5,10 +5,11 @@ gem 'rails', '3.2.13'
 gem 'devise'
 gem 'thin'
 gem 'watu_table_builder', :require => 'table_builder'
+gem 'ice_cube'
 
 group :development, :test do
   gem 'rspec-rails'
-  gem 'sqlite3'
+  gem 'pg'
 end
 
 gem 'capybara', :group => :test

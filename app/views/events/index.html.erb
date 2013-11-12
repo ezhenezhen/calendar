@@ -18,7 +18,7 @@
         <% else %>
             <%= day.day %>
             <% events.each do |event| %>
-                  <ul><%= link_to h(event.name), event %></ul>
+                  <ul><%= link_to event.name, event %></ul>
             <% end %>
         <% end %>
     <% end %>
