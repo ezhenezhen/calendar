@@ -2,16 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="86d44b2c-6531-42bd-98e6-cc6ed5798dd2" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/database.yml" afterPath="$PROJECT_DIR$/config/database.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/events_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/events_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/events/index.html.erb" afterPath="$PROJECT_DIR$/app/views/events/index.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="calendar.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="86d44b2c-6531-42bd-98e6-cc6ed5798dd2" time="1384188153312" ignored="false" />
+    <file path="/Dummy.txt" changelist="86d44b2c-6531-42bd-98e6-cc6ed5798dd2" time="1384242993729" ignored="false" />
     <file path="/routes.rb" changelist="86d44b2c-6531-42bd-98e6-cc6ed5798dd2" time="1384182375321" ignored="false" />
     <file path="/_form.html.erb" changelist="86d44b2c-6531-42bd-98e6-cc6ed5798dd2" time="1384187913445" ignored="false" />
     <file path="/application.js" changelist="86d44b2c-6531-42bd-98e6-cc6ed5798dd2" time="1384170167789" ignored="false" />
@@ -54,7 +49,7 @@
       <file leaf-file-name="database.yml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/database.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="41" selection-start="273" selection-end="273" vertical-scroll-proportion="0.32327586">
+            <state line="15" column="31" selection-start="273" selection-end="273" vertical-scroll-proportion="0.32327586">
               <folding />
             </state>
           </provider>
@@ -596,7 +591,11 @@
       <created>1384188155330</created>
       <updated>1384188155330</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="tuning">
+      <created>1384242995166</created>
+      <updated>1384242995166</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -685,7 +684,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="deleting files" />
+    <option name="LAST_COMMIT_MESSAGE" value="tuning" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -705,6 +704,7 @@
     <MESSAGE value="working on repeating events" />
     <MESSAGE value="adding repeating fields to db" />
     <MESSAGE value="deleting files" />
+    <MESSAGE value="tuning" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -817,7 +817,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/database.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="41" selection-start="273" selection-end="273" vertical-scroll-proportion="0.32327586">
+        <state line="15" column="31" selection-start="273" selection-end="273" vertical-scroll-proportion="0.32327586">
           <folding />
         </state>
       </provider>
