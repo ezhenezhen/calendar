@@ -6,10 +6,10 @@ gem 'devise'
 gem 'thin'
 gem 'watu_table_builder', :require => 'table_builder'
 gem 'ice_cube'
+gem 'pg'
 
 group :development, :test do
   gem 'rspec-rails'
-  gem 'pg'
 end
 
 gem 'capybara', :group => :test
