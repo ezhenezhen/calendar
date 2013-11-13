@@ -1,7 +1,11 @@
 Calendar::Application.routes.draw do
+  resources :events
+
   devise_for :users
 
-  root to: 'calendar#index'
+  root to: 'events#index'
+
+  match 'show_my_events' => 'events#show_my_events', as: 'my_events'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

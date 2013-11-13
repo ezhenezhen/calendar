@@ -12,4 +12,8 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery.ui.all
 //= require_tree .
+$(function() {
+    $( "#event_date" ).datepicker({ dateFormat: 'D, dd M yy' });
+});
